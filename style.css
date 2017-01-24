@@ -10,8 +10,71 @@ body {
     background-color:black;
     font-family: Impact, Charcoal, sans-serif;
     background-image: url(images/Max2.png);
+    margin: 0;
 }
+h3{
+    
+}
+img.monster{
+    width: 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+li:last-child {
+    border-right: none;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+.active {
+    background-color: #4CAF50;
+}
+    
 img.parallel{width: 30%; max-width: 300px}
+img.left{width: 20%; max-width: 500px;float: left}
 
 
 .head{color: white; font-size:300%; text-align: center,;font-style:bold;text-shadow:5px 5px black;background-image: url(images/maxresdefault.jpg); background-position: center; background-size: 1300px 1080px}
@@ -26,9 +89,30 @@ img.parallel{width: 30%; max-width: 300px}
 
 .footer{background-color:orange;color:white}
 
+.copyfloat{float: inherit}
+
 @media (min-width: 600px){
     
     img{
         width:50%;
+    }
+}
+@media screen and (max-width: 1050px){
+    ul.sidenav {
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+}
+
+@media screen and (max-width: 400px){
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
     }
 }
