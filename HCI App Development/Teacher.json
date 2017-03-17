@@ -1,0 +1,19 @@
+{
+  "Teachers": {
+    "Tina": {
+      "Subject": "Computing",
+      "Room": "Sputnik",
+      "Detail": ""
+    },
+    "Hardip": {
+      "Subject": "Computing",
+      "Room": "Voyager",
+      "Detail": ""
+    },
+    "Natasha": {
+      "Subject": "Graphics",
+      "Room": "Genisis",
+      "Detail": ""
+    }
+  }
+}

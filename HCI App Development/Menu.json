@@ -1,0 +1,4 @@
+{
+    "Menu_states":["name": "Main Menu",
+                   
+                  "Code": 'var buttons=new Array(3),options=["Find by Room","Find by Teacher","Find by Subject"];for(i=0;i<3;i++)buttons[i]=document.createElement("button"),buttons[i].className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent",buttons[i].style.color="blue",buttons[i].style.background.color="blue",buttons[i].innerHTML,options.appendChild(buttons[i]),options.appendChild(document.createElement("br"));' ]
