@@ -14,7 +14,17 @@ function handleResponse() {
     buttons[2].innerHTML = "Search by Subject";
     buttons[2].href = ""
 }
-
+var dialog = document.querySelector('dialog');
+var showDialogButton = document.querySelector('#accessibility');
+if (!dialog.showModal) {
+    dialogPolyfill.registerDialog(dialog);
+}
+showDialogButton.addEventListener('click', function () {
+    dialog.showModal();
+});
+dialog.querySelector('.close').addEventListener('click', function () {
+    dialog.close();
+});
 var options = document.getElementById('menubuttons');
 handleResponse();
 
