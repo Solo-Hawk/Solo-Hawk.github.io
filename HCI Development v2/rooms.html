@@ -1,10 +1,11 @@
 <html>
-    <head>
+
+<head>
     <link rel="stylesheet" href="mdl/material.min.css">
     <script src="mdl/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="CSS/style.css"> 
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -12,6 +13,9 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
+                <a href = "index.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--red-400 back">
+                    Back
+                </a>
                 <!-- Title -->
                 <span class="mdl-layout-title">Ada Navigator</span>
                 <!-- Add spacer, to align navigation to the right -->
@@ -34,37 +38,32 @@
             <div class="page-content">
                 <h1>Welcome to Ada Naviagor</h1>
                 <h2>Select Seach Option</h2>
-                <div  id="menubuttons">
-                <div class="mdl-spinner mdl-js-spinner is-active"></div>
-                    </div>
+                <div id="menubuttons">
+                    <!-- Your content goes here -->
+                </div>
             </div>
         </main>
     </div>
-<dialog class="mdl-dialog">
-                <h4 class="mdl-dialog__title">Accessibility Settings</h4>
-                <div class="mdl-dialog__content" data-backdrop="false">
-                    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+
+    <dialog class="mdl-dialog">
+        <h4 class="mdl-dialog__title">Accessibility Settings</h4>
+        <div class="mdl-dialog__content" data-backdrop="false">
+            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
                         <input type="checkbox" id="switch-1" class="mdl-switch__input" checked=""> <span class="mdl-switch__label">High Constrast Mode</span>
                     </label>
-                    <h1>
-                    </h1>
-                    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+            <h1>
+            </h1>
+            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
                         <input type="checkbox" id="switch-2" class="mdl-switch__input" checked=""> <span class="mdl-switch__label">Text to Speech</span>
                     </label>
-                </div>
-                <div class="mdl-dialog__actions">
+        </div>
+        <div class="mdl-dialog__actions">
 
-                    <button type="button" class="mdl-button close">Ok</button>
-                </div>
-            </dialog>
-            
-
-
-
-
-
+            <button type="button" class="mdl-button close">Ok</button>
+        </div>
+    </dialog>
 
 </body>
+<script src="JavaScripts/rooms.js"></script>
 
-<script src="JavaScripts/index.js"></script>
 </html>

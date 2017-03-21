@@ -1,4 +1,6 @@
+
 function handleResponse() {
+    options.innerHTML = "";
     var buttons = new Array(3);
     for (var i = 0; i < 3; i++) {
         buttons[i] = document.createElement("a");
@@ -8,12 +10,23 @@ function handleResponse() {
         options.appendChild(document.createElement("br"));
     }
     buttons[0].innerHTML = "Search by Room";
-    buttons[0].href = "search_room.html"
+    buttons[0].href = "rooms.html"
     buttons[1].innerHTML = "Search by Teacher";
     buttons[1].href = ""
     buttons[2].innerHTML = "Search by Subject";
     buttons[2].href = ""
 }
+runDialog();
+var options = document.getElementById('menubuttons');
+handleResponse();
+
+
+function search_room() {}
+
+function search_teacher() {}
+
+function search_subject() {}
+function runDialog(){
 var dialog = document.querySelector('dialog');
 var showDialogButton = document.querySelector('#accessibility');
 if (!dialog.showModal) {
@@ -25,12 +38,4 @@ showDialogButton.addEventListener('click', function () {
 dialog.querySelector('.close').addEventListener('click', function () {
     dialog.close();
 });
-var options = document.getElementById('menubuttons');
-handleResponse();
-
-
-function search_room() {}
-
-function search_teacher() {}
-
-function search_subject() {}
+}

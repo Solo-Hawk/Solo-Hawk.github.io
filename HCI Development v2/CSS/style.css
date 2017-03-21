@@ -1,23 +1,48 @@
-.menu-button{
-    padding-left: 10%;
+body {
+    font-size: 1em;
+}
+
+.menu-button {
+    padding-left: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
-    padding-right: 10%;
+    padding-right: 5%;
     text-align: center;
     font-size: 1.4em;
     font-weight: bold;
-    min-width:30%;
+    min-width: 20%;
     min-height: 2%;
-    margin-top: 3%;
-    
+    margin-top: 1%;
 }
-.page-content{
+
+.page-content,
+.button-zone {
     text-align: center
 }
-@media only screen and (max-width: 500px){
-    .menu-button{
+.back{
+    background-color: aqua;
+    margin-right: 10px
+    
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 0.8em;
+    }
+    h1 {
+        font-size: 3em;
+        font-weight: bold
+            }
+    h2 {
+        font-size: 2.4em;
+        font-weight: bold;
+        
+        
+    }
+    .menu-button {
+        margin-top: 1%;
         padding-left: 0%;
-            padding-right:0%;
-        min-width: 80%
+        padding-right: 0%;
+        min-width: 56%
     }
 }
