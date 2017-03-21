@@ -1,34 +1,36 @@
+body{
+    text-align: center
+    
+}
 .mdl-button{
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bold;
     min-height: 50px;
-    min-width: 200px;
-    margin: 10px;
-    background-color: aliceblue;
+    min-width: 300px;
+    background-color: white;
 }
 .overlay {
   position: relative;
+    opacity: 0.5;
+}
+.menu-button{
+    margin-top:12px;
+    padding-top:12px;
+    
+    
+    
+    
 }
 
-.overlay:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: none;
-  z-index:0;
+.welcome{
+    background-color: black;
+    
 }
-
-.overlay:hover:before{
-  display: block;
+.mdl-dialog{
+    
+    width: 300px
+    
 }
-
-.dark:before {
-  background-color: rgba(0,0,0,0.5);
-}
-
-.box * {
-    position: relative;
-    /* hack */
+.welcome-button{
+    padding: 0px;
 }

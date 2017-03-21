@@ -135,8 +135,7 @@ function preload() {
 }
 
 function create() {
-    selectBox = game.add.graphics(0,0);
-    selectBox.lineStyle(10, 0x00ff00, 1);
+    
     selectArea = new Phaser.Rectangle(0, 0, 0, 0);
     inputState = "mouseUp";
     shoot[0] = game.add.audio("laser1");
@@ -338,7 +337,7 @@ function update() {
             //debug drawing
             bfield[i].x = boids[i].x;
             bfield[i].y = boids[i].y;
-            if(selectType == "none"){
+            if (selectType == "none") {
                 bSeleted[i] = false;
             }
         }
@@ -451,6 +450,10 @@ function update() {
     nodeAng += nodeRot;
     //boids[game.rnd.between(0, boidsAmount - 1)].kill();
     //hboids[game.rnd.between(0, hostileboids - 1)].kill();
+    //selectBox.clear();
+     if(selectType == "none"){
+            //selectBox.clear()
+     }
 }
 
 function render() {
@@ -458,25 +461,32 @@ function render() {
     game.debug.text(("Respawnwave: " + respawnWave), 100, game.height - 180)
     game.debug.text(("Next AI Decision:" + hmove), 100, game.height - 160)
     game.debug.text(("Mouse State:" + inputState), 100, game.height - 140)
-    //game.debug.pointer(game.input.mousePointer);
+        //game.debug.pointer(game.input.mousePointer);
     game.debug.text(game.input.activePointer.isDown, 100, game.height - 120);
     game.debug.text(("CaptureX: " + captureX + "  CaptureY: " + captureY), 100, game.height - 100);
     game.debug.text(("Select Type: " + selectType), 100, game.height - 80);
     game.debug.text(("Select Node: " + selectedNode), 100, game.height - 60);
     game.debug.text(("Selected Ships: " + selectedShips + " Selector Count: " + selected), 100, game.height - 40);
+    game.debug.text(("SelectX: " + selectArea.width + " SelectY: " + selectArea.height), 100, game.height - 20);
     //game.debug.text(selectArea,300,300);
     //rendering select box
-    if(game.input.activePointer.isDown){
-        
+    if (game.input.activePointer.isDown && selectType == "ships") {//&& selectType == "ships"
+         console.log("Check")
+         selectArea.x = captureX;
+            selectArea.y = captureY;
+            selectArea.width = game.input.activePointer.x - captureX
+            selectArea.height = game.input.activePointer.y - captureY
+            
+        selectBox = game.add.graphics(0, 0);
+    selectBox.lineStyle(3, 0x00ff00, 1);
+        selectBox.drawRect(captureX, captureY, selectArea.width, selectArea.height);
+        selectBox.lifespan = 5;
         
     }else{
-        
-        
+       
     }
-    
-    
-    
 }
+
 
 function checkOverlap(spriteA, spriteB) {
     var boundsA = spriteA.getBounds()

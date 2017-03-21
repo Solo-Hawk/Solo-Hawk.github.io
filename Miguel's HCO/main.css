@@ -1,0 +1,80 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+@font-face {
+	font-family: sinclair;
+	src: url("fonts/sinclair.ttf");
+}
+
+.mdl-layout {
+	background: #EEE;
+}
+
+.mdl-layout__header,
+.mdl-layout__tab {
+	background: rgb(149, 96, 159);
+}
+
+.booker {
+	text-align: center;
+	font-family: "Sinclair", sans-serif;
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 3em;
+}
+
+img {
+	padding: 2px;
+	margin: 2px auto;
+}
+
+select {
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+	margin-bottom: 80px;
+}
+
+#message,
+p {
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.floors {
+	max-width: 300px;
+}
+
+#actions {
+	text-align: center;
+	padding: 0px;
+}
+
+#actions>button {
+	background: rgb(246, 111, 123);
+	color: white;
+	margin: 5px 2px;
+	width: 110px
+}
+
+.mdl-card {
+	width: 80% !important;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+@media screen and (orientation: portrait) {
+	.mdl-card {
+		width: 95%;
+		/* No calc fallback*/
+		width: calc(100% - 30px) !important;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}

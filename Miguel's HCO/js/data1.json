@@ -1,0 +1,53 @@
+{
+    "adainfo": [
+        {
+            "teacher": "Tina"
+            , "classroom": "Sputnik"
+            , "capacity": 25
+            , "subject": "computer science"
+        },
+
+        {
+            "teacher": "Hardip"
+            , "classroom": "Voyager"
+            , "capacity": 25
+            , "subject": "computer science"
+        },
+
+        {
+            "teacher": "Ian"
+            , "classroom": "Endeavour"
+            , "capacity": 25
+            , "subject": "Mathematics"
+        },
+
+        {
+            "teacher": "Natasha"
+            , "classroom": "Genesis"
+            , "capacity": 25
+            , "subject": "Graphics"
+        },
+
+        {
+            "teacher": "Ped"
+            , "classroom": "Galileo"
+            , "capacity": 25
+            , "subject": "Physics"
+        },
+
+        {
+            "teacher": "Tom"
+            , "classroom": "Voyager"
+            , "capacity": 25
+            , "subject": "Mathematics & EPQ"
+        },
+        
+        {
+            "teacher": "Nama"
+            , "classroom": "Pioneer"
+            , "capacity": 25
+            , "subject": "Business"
+        }
+        
+ ]
+}
