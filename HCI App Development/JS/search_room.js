@@ -25,7 +25,7 @@ var rooms = new XMLHttpRequest();
 
 
 
-rooms.open('GET', 'search_room.json', false);
+rooms.open('GET', 'JS/search_room.json', false);
 console.log("Yo")
 var json;
 
