@@ -10,17 +10,17 @@ function handleResponse() {
     buttons[0].innerHTML = "Search by Room";
     buttons[0].href = "search_room.html"
     buttons[1].innerHTML = "Search by Teacher";
-    buttons[1].addEventListener('click', search_teacher)
+    buttons[1].href = ""
     buttons[2].innerHTML = "Search by Subject";
-    buttons[2].addEventListener('click', search_subject)
+    buttons[2].href = ""
 }
 
-    var options = document.getElementById('menubuttons');
-    var rooms = new XMLHttpRequest();
-    rooms.open('GET', 'Menu.json');
-    console.log(rooms.responseText);
-    rooms.addEventListener('load', handleResponse);
-    rooms.send();
+var options = document.getElementById('menubuttons');
+var rooms = new XMLHttpRequest();
+rooms.open('GET', 'Menu.json');
+console.log(rooms.responseText);
+rooms.addEventListener('load', handleResponse);
+rooms.send();
 
 
 function search_room() {}
