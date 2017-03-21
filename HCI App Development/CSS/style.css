@@ -1,36 +1,13 @@
-body{
-    text-align: center
-    
-}
-.mdl-button{
-    font-size: 24px;
-    font-weight: bold;
-    min-height: 5%;
-    min-width: 20%;
-    background-color: white;
-}
-.overlay {
-  position: relative;
-    opacity: 0.5;
-}
 .menu-button{
-    margin-top:12px;
-    padding-top:12px;
-    
-    
-    
-    
-}
-
-.welcome{
-    background-color: black;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    min-width: 40%;
+    min-height: 2%;
+    margin-top: 5%
     
 }
-.mdl-dialog{
-    
-    min-width: 20%
-    
-}
-.welcome-button{
-    padding: 0px;
+.page-content{
+    text-align: center
 }
