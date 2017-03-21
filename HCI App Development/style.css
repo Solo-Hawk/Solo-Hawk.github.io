@@ -1,3 +1,8 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
 body{
     text-align: center
     
@@ -5,8 +10,8 @@ body{
 .mdl-button{
     font-size: 24px;
     font-weight: bold;
-    min-height: 50px;
-    min-width: 300px;
+    min-height: 5%;
+    min-width: 20%;
     background-color: white;
 }
 .overlay {
@@ -28,9 +33,18 @@ body{
 }
 .mdl-dialog{
     
-    min-width: 300px
+    min-width: 20%
     
 }
 .welcome-button{
     padding: 0px;
+}
+@media screen and (orientation: portrait) {
+	.mdl-card {
+		width: 95%;
+		/* No calc fallback*/
+		width: calc(100% - 30px) !important;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
