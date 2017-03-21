@@ -1,10 +1,11 @@
 <html>
-
-<head>
+    <head>
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <script src="mdl/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css">
-    
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="CSS/style.css"> 
+</head>
 
 <body>
     <!-- Always shows a header, even in smaller screens. -->
@@ -12,16 +13,9 @@
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Title</span>
+                <span class="mdl-layout-title">Ada Navigator</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
-                <!-- Navigation. We hide it in small screens. -->
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer">
@@ -30,16 +24,60 @@
                 <a class="mdl-navigation__link" href="">Link</a>
                 <a class="mdl-navigation__link" href="">Link</a>
                 <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+                <br>
+                <br>
+                <br>
+                <a class="mdl-navigation__link" id="accessibility">Accessibility</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
             <div class="page-content">
+                <h1>Welcome to Ada Naviagor</h1>
+                <h2>Select Seach Option</h2>
+                <div  id="menubuttons">
                 <!-- Your content goes here -->
+                    </div>
             </div>
         </main>
     </div>
-</body>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<dialog class="mdl-dialog">
+                <h4 class="mdl-dialog__title">Accessibility Settings</h4>
+                <div class="mdl-dialog__content">
+                    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                        <input type="checkbox" id="switch-1" class="mdl-switch__input" checked=""> <span class="mdl-switch__label">High Constrast Mode</span>
+                    </label>
+                    <h1>
+                    </h1>
+                    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                        <input type="checkbox" id="switch-2" class="mdl-switch__input" checked=""> <span class="mdl-switch__label">Text to Speech</span>
+                    </label>
+                </div>
+                <div class="mdl-dialog__actions">
 
+                    <button type="button" class="mdl-button close">Ok</button>
+                </div>
+            </dialog>
+            <script>
+                var dialog = document.querySelector('dialog');
+                var showDialogButton = document.querySelector('#accessibility');
+                if (!dialog.showModal) {
+                    dialogPolyfill.registerDialog(dialog);
+                }
+                showDialogButton.addEventListener('click', function() {
+                    dialog.showModal();
+                });
+                dialog.querySelector('.close').addEventListener('click', function() {
+                    dialog.close();
+                });
+
+            </script>
+
+
+
+
+
+
+</body>
+
+<script src="JavaScripts/index.js"></script>
 </html>
