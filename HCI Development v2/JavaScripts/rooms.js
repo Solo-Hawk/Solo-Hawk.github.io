@@ -1,5 +1,4 @@
 function handleResponse() {
-    back.removeEventListener('click',handleResponse)
     
     json = rooms.responseText
     console.log(json);
@@ -25,7 +24,6 @@ var options = document.getElementById('menubuttons');
 var output = document.getElementById('output');
 var floors = new Array(2);
 
-var back = document.getElementById('back');
 
 var rooms = new XMLHttpRequest();
 //handleResponse();
@@ -42,9 +40,7 @@ rooms.send();
 
 
 function show_ground_floor() {
-    back.href = "";
     
-    back.addEventListener('click',handleResponse)
 
     var groundFloor = new Array(json['College_Rooms_Floors'][0].length);
     options.innerHTML = ""
@@ -64,8 +60,7 @@ function show_ground_floor() {
 }
 
 function show_first_floor() {
-    back.href = "";
-back.addEventListener('click',handleResponse)
+    
     var firstFloor = new Array(json['College_Rooms_Floors'][1].length);
     options.innerHTML = ""
     console.log(json['College_Rooms_Floors'][1].length)
@@ -90,8 +85,8 @@ function ground_floor_press() {
     temp = document.createElement("section")
     temp.innerHTML = 
         "Room Owner - " + json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Owner'] + "<br>" + 
-        "Room Subject - " + json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Subject'] + "<br>" + "Room Size - " + json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Size'] + "<br>" + 
-         json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Info'];
+        "Room Subject - " + json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Subject'] + "<br>" + "Room Size - " + json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Size'] + "<br><p>" + 
+         json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Info'] + "</p>";
     output.appendChild(temp);
     
     
@@ -106,8 +101,8 @@ function first_floor_press() {
     temp = document.createElement("section")
     temp.innerHTML = 
         "Room Owner - " + json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Owner'] + "<br>" + 
-        "Room Subject - " + json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Subject'] + "<br>" + "Room Size - " + json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Size'] + "<br>" + 
-         json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Info']
+        "Room Subject - " + json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Subject'] + "<br>" + "Room Size - " + json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Size'] + "<br><p>" + 
+         json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Info'] + "</p>"
     output.appendChild(temp);
     
     

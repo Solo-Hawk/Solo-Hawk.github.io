@@ -8,19 +8,25 @@
 </head>
 
 <body>
-     <!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <span class="mdl-layout-title">Ada Navigator</span>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer"></div>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Menu</span>
-            <nav class="mdl-navigation">
+    <!-- Always shows a header, even in smaller screens. -->
+    <!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Site Map</span>
+    
+      </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Ground Floor</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">First Floor</a>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+      <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="index.html">Ada Navigate</a>
                 <a class="mdl-navigation__link" href="sitemap.html">Site Map</a>
                 <a class="mdl-navigation__link" href="contact.html">Contact Ada</a>
@@ -30,17 +36,17 @@
                 <br>
                 <a class="mdl-navigation__link" id="accessibility">Accessibility</a>
             </nav>
-        </div>
-        <main class="mdl-layout__content">
-            <div class="page-content">
-                <h1>Welcome to Ada Naviagor</h1>
-                <h2>Select Seach Option</h2>
-                <div  id="menubuttons">
-                <div class="mdl-spinner mdl-js-spinner is-active"></div>
-                    </div>
-            </div>
-        </main>
-    </div>
+  </div>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content"><img class="map" src="Images/Ground%20Floor.png"><div class="legend-box"><img class="legend" src="Images/Legend.png"></div></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content"><img class="map" src="Images/First%20Floor.png"><div class = "legend-box"><img class="legend" src="Images/Legend.png"></div></div>
+    </section>
+    
+  </main>
+</div>
 <dialog class="mdl-dialog">
                 <h4 class="mdl-dialog__title">Accessibility Settings</h4>
                 <div class="mdl-dialog__content" data-backdrop="false">
