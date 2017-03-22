@@ -27,6 +27,10 @@ body {
     padding-right: 10px;
     
 }
+.Contact-Info{
+    
+    font-size: 1.5em
+}
 
 .back {
     background-color: aqua;
@@ -72,4 +76,8 @@ body {
         font-size: 0.7em;
         font-weight: bold;
     }
+    .map {
+    height: 50%
+}
+
 }
