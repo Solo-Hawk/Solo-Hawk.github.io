@@ -17,14 +17,14 @@
       },
       {
         "Room_Name": "Sputnik",
-        "Room_Owner": "Tina's",
+        "Room_Owner": "Tina",
         "Room_Size": "25",
         "Room_Subject": "Computer Science",
         "Room_Info": ""
       },
       {
         "Room_Name": "Voyager",
-        "Room_Owner": "Ian's",
+        "Room_Owner": "Ian",
         "Room_Size": "25",
         "Room_Subject": "Maths",
         "Room_Info": ""
@@ -38,7 +38,7 @@
       },
       {
         "Room_Name": "Endeavour",
-        "Room_Owner": "Hardip's",
+        "Room_Owner": "Hardip",
         "Room_Size": "25",
         "Room_Subject": "Computer Science",
         "Room_Info": ""
@@ -54,7 +54,7 @@
       },
       {
         "Room_Name": "Gallileo",
-        "Room_Owner": "Ped's",
+        "Room_Owner": "Ped",
         "Room_Size": "18",
         "Room_Subject": "Physics",
         "Room_Info": ""
@@ -75,7 +75,7 @@
       },
       {
         "Room_Name": "Genesis",
-        "Room_Owner": "Natasha's",
+        "Room_Owner": "Natasha",
         "Room_Size": "25",
         "Room_Subject": "Graphics",
         "Room_Info": ""

@@ -45,4 +45,12 @@ body {
         padding-right: 0%;
         min-width: 56%
     }
+    .back{
+        padding: 0px;
+        font-size: 1.4em;
+    background-color: aqua;
+        width: 5%;
+    margin-right: 8%
+    
+    }
 }
