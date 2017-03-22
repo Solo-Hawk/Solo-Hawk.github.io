@@ -12,9 +12,9 @@ function handleResponse() {
     buttons[0].innerHTML = "Search by Room";
     buttons[0].href = "rooms.html"
     buttons[1].innerHTML = "Search by Teacher";
-    buttons[1].href = ""
+    buttons[1].href = "template.html"
     buttons[2].innerHTML = "Search by Subject";
-    buttons[2].href = ""
+    buttons[2].href = "template.html"
 }
 runDialog();
 var options = document.getElementById('menubuttons');
