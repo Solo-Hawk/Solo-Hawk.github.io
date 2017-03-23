@@ -57,8 +57,10 @@ var nodeAng = 123;
 var nodeRng = 40;
 var nodeRot = 3;
 //boid respawn
-var respawnRate = 60;
+var respawnRate = 180;
 var respawnWave = respawnRate;
+var brno = 0;
+var hrno = 0;
 // boid variables
 var boidSize = 0.2;
 var boidSpeed = 350;
@@ -120,7 +122,7 @@ function createMap(game) {
                 ]
 }
 window.onload = function () {
-    game = new Phaser.Game(1860, 940, Phaser.AUTO, "");
+    game = new Phaser.Game("100%", "100%", Phaser.AUTO, "");
     game.state.add("Simulate", simulate);
     game.state.start("Simulate");
 }
@@ -129,7 +131,8 @@ simulate.prototype = {
     preload: preload,
     create: create,
     update: update,
-    render: render
+    render: render,
+    resize: onResize
 }
 
 function preload() {
@@ -324,10 +327,11 @@ function update() {
         if (respawnWave < tick) {
             var bres = false;
             var hres = false;
+            
             for (var i = 0; i < limit; i++) {
                 var randX = game.rnd.between(-50, 50);
                 var randY = game.rnd.between(-50, 50);
-                if (hboids[i].alive == false && !hres) {
+                if (hboids[i].alive == false && !hres && hrno < 5) {
                     hboids[i].alive = true;
                     hboids[i].exists = true;
                     hboids[i].visible = true;
@@ -335,8 +339,9 @@ function update() {
                     hboids[i].y -= 400
                     hnode[i] = nodes - 1
                     hres = true;
+                    hrno += 1
                 }
-                if (boids[i].alive == false && !bres) {
+                if (boids[i].alive == false && !bres && brno < 5) {
                     boids[i].alive = true;
                     boids[i].exists = true;
                     boids[i].visible = true;
@@ -344,12 +349,18 @@ function update() {
                     boids[i].y += 400
                     bnode[i] = 0;
                     bres = true;
+                    brno += 1
                 }
                 if (bres && hres) {
                     break
                 }
             }
+            if (brno == 5 && hrno == 5){
             respawnWave += respawnRate;
+                brno = 0;
+                hrno = 0;
+                
+            }
         }
         //managing boid movement
         for (var i = 0; i < limit; i++) {
@@ -386,9 +397,12 @@ function update() {
                         game.debug.body(boids[i])
                     }
                 }
+                
             } else {
                 boids[i].visible = false;
             }
+            
+            
             if (hboids[i].alive) {
                 if (tick > hmove) {
                     var rHun = game.rnd.between(1, 99);
@@ -511,9 +525,18 @@ function update() {
         if (selectType == "none") {
             //selectBox.clear()
         }
+
+        
     }
 
     function render() {
+        for(var n = 0; n < nodes;n++){
+                selectBox = game.add.graphics(0, 0);
+            selectBox.lineStyle(3, 0x00ff00, 1);
+            
+                selectBox.drawRect(node[n].x, node[n].y, node[n].width, node[n].height);
+                selectBox.lifespan = 1;
+            }
         game.debug.text(("Tick: " + tick), 100, game.height - 200);
         game.debug.text(("Respawnwave: " + respawnWave), 100, game.height - 180)
         game.debug.text(("Next AI Decision:" + hmove), 100, game.height - 160)
@@ -550,5 +573,7 @@ function update() {
         var boundsA = spriteA.getBounds();
         return Phaser.Rectangle.intersects(boundsA, spriteB);
     }
+
+function onResize(){}
 
 function moveCentralNodes() {}
