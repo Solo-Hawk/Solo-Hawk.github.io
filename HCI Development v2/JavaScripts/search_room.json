@@ -6,21 +6,21 @@
         "Room_Owner": "Meeting",
         "Room_Size": "6",
         "Room_Subject": "Meetings",
-        "Room_Info": ""
+        "Room_Info": "This room is used for meetings, with at most 6 people in the room at anytime, many industry professionals use this room"
       },
       {
         "Room_Name": "Beta",
         "Room_Owner": "Technican",
         "Room_Size": "4",
         "Room_Subject": "Network",
-        "Room_Info": ""
+        "Room_Info": "Behinds the scene of the college and how the computer systems work in the college is thanks to this room this is off limits to those without permission"
       },
       {
         "Room_Name": "Sputnik",
         "Room_Owner": "Tina",
         "Room_Size": "25",
         "Room_Subject": "Computer Science",
-        "Room_Info": ""
+        "Room_Info": "Sputnik is one of the Computer Science rooms, owner by Tina - Head of Computer Science and the teacher for the Computing Extended BTEC"
       },
       {
         "Room_Name": "Voyager",

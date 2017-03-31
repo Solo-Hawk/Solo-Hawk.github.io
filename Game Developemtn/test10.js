@@ -61,6 +61,8 @@ var respawnRate = 180;
 var respawnWave = respawnRate;
 var brno = 0;
 var hrno = 0;
+var bWave = 5;
+var hWave = 5;
 // boid variables
 var boidSize = 0.2;
 var boidSpeed = 350;
@@ -89,13 +91,13 @@ function createMap(game) {
     nodes = 9;
     map = [
              [50, 50]
-            , [((game.width / 32) * 12) - 45, ((game.height / 20) * 7) - 45]
-            , [((game.width / 32) * 16) - 45, ((game.height / 20) * 4) - 45]
-            , [((game.width / 32) * 20) - 45, ((game.height / 20) * 7) - 45]
+            , [((game.width / 32) * 6) - 45, ((game.height / 20) * 7) - 45]
+            , [((game.width / 32) * 14) - 45, ((game.height / 20) * 2) - 45]
+            , [((game.width / 32) * 20) - 45, ((game.height / 20) * 6) - 45]
             , [(game.width / 2) - 45, (game.height / 2) - 45]
-            , [((game.width / 32) * 20) - 45, ((game.height / 20) * 13) - 45]
-            , [((game.width / 32) * 16) - 45, ((game.height / 20) * 16) - 45]
-            , [((game.width / 32) * 12) - 45, ((game.height / 20) * 13) - 45]
+            , [((game.width / 32) * 26) - 45, ((game.height / 20) * 13) - 45]
+            , [((game.width / 32) * 18) - 45, ((game.height / 20) * 18) - 45]
+            , [((game.width / 32) * 12) - 45, ((game.height / 20) * 14) - 45]
             , [game.width - 141, game.height - 141]
     ];
     maplinks = [
@@ -122,7 +124,7 @@ function createMap(game) {
                 ]
 }
 window.onload = function () {
-    game = new Phaser.Game("100%", "100%", Phaser.AUTO, "");
+    game = new Phaser.Game("96%", "96", Phaser.CANVAS, "");
     game.state.add("Simulate", simulate);
     game.state.start("Simulate");
 }
@@ -131,8 +133,7 @@ simulate.prototype = {
     preload: preload,
     create: create,
     update: update,
-    render: render,
-    resize: onResize
+    render: render
 }
 
 function preload() {
@@ -271,12 +272,17 @@ function update() {
             inputState = "Selecting Multiple";
             selectType = "ships"
         }
-    } else {
+    } else { selectedNode = -1
         if (selectType == "node" || selectType == "pickingNode") {
             selectedNode = -1
             for (var x = 0; x < nodes; x++) {
-                if (node[x].input.pointerOver()) {
+                console.log("node : " + x      )
+                if ((node[x].input.pointerOver()==true)) {
+                    console.log("selected node : " + x      )
+                    console.log("x : " + game.input.activePointer.x     )
+                    console.log("y : " + game.input.activePointer.y      )
                     selectedNode = x
+                    
                 }
             }
             if (selectType == "pickingNode" && game.input.activePointer.isDown) {
@@ -315,52 +321,21 @@ function update() {
                 }
                 //selectArea.destroy();
                 selectType = "pickingNode"
+            }else if(selectType = "node"){
+                
+                
+                
             }
             if (selectType != "pickingNode") {
                 inputState = "mouseUp";
                 captureOrigin = false
-                selectType = "none"
+                selectType = "none" 
             }
         }
         //end of managing input
         // respawn manager
         if (respawnWave < tick) {
-            var bres = false;
-            var hres = false;
-            
-            for (var i = 0; i < limit; i++) {
-                var randX = game.rnd.between(-50, 50);
-                var randY = game.rnd.between(-50, 50);
-                if (hboids[i].alive == false && !hres && hrno < 5) {
-                    hboids[i].alive = true;
-                    hboids[i].exists = true;
-                    hboids[i].visible = true;
-                    hboids[i].x -= 400
-                    hboids[i].y -= 400
-                    hnode[i] = nodes - 1
-                    hres = true;
-                    hrno += 1
-                }
-                if (boids[i].alive == false && !bres && brno < 5) {
-                    boids[i].alive = true;
-                    boids[i].exists = true;
-                    boids[i].visible = true;
-                    boids[i].x += 400
-                    boids[i].y += 400
-                    bnode[i] = 0;
-                    bres = true;
-                    brno += 1
-                }
-                if (bres && hres) {
-                    break
-                }
-            }
-            if (brno == 5 && hrno == 5){
-            respawnWave += respawnRate;
-                brno = 0;
-                hrno = 0;
-                
-            }
+            handleRespawn(game);
         }
         //managing boid movement
         for (var i = 0; i < limit; i++) {
@@ -397,12 +372,9 @@ function update() {
                         game.debug.body(boids[i])
                     }
                 }
-                
             } else {
                 boids[i].visible = false;
             }
-            
-            
             if (hboids[i].alive) {
                 if (tick > hmove) {
                     var rHun = game.rnd.between(1, 99);
@@ -502,46 +474,27 @@ function update() {
             hmove += game.rnd.between(desRate, desRate * 3)
         }
         // Reset point 
-        if (nodeAng > 600) {
-            nodeAng = 0;
-            /*for (var x = 0; x < node.length; x++) {
-                node[x].x = game.rnd.between(100, game.width - 100);
-                node[x].y = game.rnd.between(100, game.height - 100);
-            }*/
-            rndn = game.rnd.between(0, nodes - 1);
-            //rndh = game.rnd.between(0, nodes - 1);
-        }
-        //game.debug.geom(hfield, '#ffffcc');
-        //game.debug.geom(bfield, '#ccffff');
+        
         tick += 1
         for (var x = 0; x < node.length; x++) {
             target[x].x = node[x].x + (nodeRng * Math.cos(nodeAng)) + (nodeRng / 2) + 26;
             target[x].y = node[x].y + (nodeRng * Math.sin(nodeAng)) + (nodeRng / 2) + 26;
         }
         nodeAng += nodeRot;
-        //boids[game.rnd.between(0, boidsAmount - 1)].kill();
-        //hboids[game.rnd.between(0, hostileboids - 1)].kill();
         //selectBox.clear();
         if (selectType == "none") {
             //selectBox.clear()
         }
-
-        
     }
 
     function render() {
-        for(var n = 0; n < nodes;n++){
-                selectBox = game.add.graphics(0, 0);
-            selectBox.lineStyle(3, 0x00ff00, 1);
-            
-                selectBox.drawRect(node[n].x, node[n].y, node[n].width, node[n].height);
-                selectBox.lifespan = 1;
-            }
         game.debug.text(("Tick: " + tick), 100, game.height - 200);
         game.debug.text(("Respawnwave: " + respawnWave), 100, game.height - 180)
         game.debug.text(("Next AI Decision:" + hmove), 100, game.height - 160)
         game.debug.text(("Mouse State:" + inputState), 100, game.height - 140)
         //game.debug.pointer(game.input.mousePointer);
+    game.debug.pointer(game.input.activePointer);
+    //game.debug.pointer(game.input.pointer2);
         game.debug.text(game.input.activePointer.isDown, 100, game.height - 120);
         game.debug.text(("CaptureX: " + captureX + "  CaptureY: " + captureY), 100, game.height - 100);
         game.debug.text(("Select Type: " + selectType), 100, game.height - 80);
@@ -563,6 +516,46 @@ function update() {
         } else {}
     }
 
+function handleRespawn(game){
+    var bres = false;
+            var hres = false;
+            
+            for (var i = 0; i < limit; i++) {
+                var randX = game.rnd.between(-50, 50);
+                var randY = game.rnd.between(-50, 50);
+                if (hboids[i].alive == false && !hres && hrno < hWave) {
+                    hboids[i].alive = true;
+                    hboids[i].exists = true;
+                    hboids[i].visible = true;
+                    hboids[i].x -= 400
+                    hboids[i].y -= 400
+                    hnode[i] = nodes - 1
+                    hres = true;
+                    hrno += 1
+                }
+                if (boids[i].alive == false && !bres && brno < bWave) {
+                    boids[i].alive = true;
+                    boids[i].exists = true;
+                    boids[i].visible = true;
+                    boids[i].x += 400
+                    boids[i].y += 400
+                    bnode[i] = 0;
+                    bres = true;
+                    brno += 1
+                }
+                if (bres && hres) {
+                    break
+                }
+            }
+            if (brno == bWave && hrno == hWave){
+            respawnWave += respawnRate;
+                brno = 0;
+                hrno = 0;
+                
+            }
+}
+
+
     function checkOverlap(spriteA, spriteB) {
         var boundsA = spriteA.getBounds()
         var boundsB = spriteB.getBounds()
@@ -573,7 +566,5 @@ function update() {
         var boundsA = spriteA.getBounds();
         return Phaser.Rectangle.intersects(boundsA, spriteB);
     }
-
-function onResize(){}
 
 function moveCentralNodes() {}

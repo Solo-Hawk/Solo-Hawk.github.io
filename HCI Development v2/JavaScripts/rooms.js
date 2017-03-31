@@ -86,7 +86,7 @@ function ground_floor_press() {
     temp.innerHTML = 
         "Room Owner - " + json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Owner'] + "<br>" + 
         "Room Subject - " + json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Subject'] + "<br>" + "Room Size - " + json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Size'] + "<br><p>" + 
-         json['College_Rooms_Floors'][1][parseInt(this.id)]['Room_Info'] + "</p>";
+         json['College_Rooms_Floors'][0][parseInt(this.id)]['Room_Info'] + "</p>";
     output.appendChild(temp);
     
     
