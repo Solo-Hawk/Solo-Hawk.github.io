@@ -116,8 +116,8 @@ var respawnRate = 240;
 var respawnWave = 120;
 var brno = 0;
 var hrno = 0;
-var bWave = 20;
-var hWave = 1;
+var bWave = 5;
+var hWave = 5;
 //
 //
 // boid variables
