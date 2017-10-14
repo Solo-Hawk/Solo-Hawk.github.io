@@ -11,12 +11,12 @@ My github.io URL will now be changed to my personal website to act as my portal 
 
 ## Tasks
 
-** Stage One **
+**Stage One**
 
 - [x] - Organise pages (Remove uncesscary or incomplete pages)
 - [ ] - Revamp design - **Current stage**
 
-** Stage Two **
+**Stage Two**
 
 - [ ] - Revise portfolio presentation method (Following uni guides)
 - [ ] - Restructure work timetable (Not really for the website but to help keep my site consistently updated)
