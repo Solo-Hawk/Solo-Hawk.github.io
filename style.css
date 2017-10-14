@@ -1,9 +1,66 @@
 body{
-  
+    margin: 0px;
+    background-color: gray
 }
 
-h1{
+h1, h2{
     text-align-last: center;
     font-family: 'Rubik Mono One', sans-serif;
+    
+}
+h1{
     font-size: 48px;
 }
+
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 24px;
+}
+.caption{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.parralax{
+    background-color: white
+}
+
+.cover{
+    position:absolute;
+    left:0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.image-1, .image-2, .image-3, .image-4 {
+    background-color: white;
+    background-position: center;
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-1 {
+    background-image: url(src/Talk2.png);
+    min-height: 800px;
+}
+.image-2 {
+    background-image: url(src/Focused.png);
+    min-height: 600px;
+}
+.image-3 {
+    background-image: url(src/frame_13_delay-0.06s.png);
+    min-height: 600px;
+}
+.image-4 {
+    background-image: url(src/HCI%20Blinded.png);
+    min-height: 600px;
+}
+
