@@ -7,14 +7,14 @@ My github.io webpage was originally made as a quick portal for the college cours
 
 ## What it is now
 
-My github.io URL will now be changed to my personal website to act as my portfolio, here I will be linking all my current and past projects, college and personal. I want to make it as easy as possible to just be a self explanitory site for viewers to see any type of work they are interested in
+My github.io URL will now be changed to my personal website to act as my portal for my college work and as a location for presenting my portfolio, here I will be linking all my current and past projects, college and personal. I want to make it as easy as possible to just be a self explanitory site for viewers to see any type of work they are interested in.
 
 ## Tasks
 
 ** Stage One **
 
-- [ ] - Organise pages (Remove uncesscary or incomplete pages)
-- [ ] - Revamp design
+- [x] - Organise pages (Remove uncesscary or incomplete pages)
+- [ ] - Revamp design - **Current stage**
 
 ** Stage Two **
 
