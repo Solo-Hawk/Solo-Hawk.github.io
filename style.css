@@ -67,6 +67,9 @@ h2 {
     margin-left: 37%;
     margin-right: 37%;
 }
+.rainbow{
+    color: hsl(0, 100%, 50%);
+}
 
 .image-1,
 .image-2,
