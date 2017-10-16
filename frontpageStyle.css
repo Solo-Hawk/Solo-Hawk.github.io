@@ -14,25 +14,25 @@
 
 .image-1 {
     background-image: url(src/Focused.png);
-    min-height: 85%;
+    min-height: 90%;
 }
 
 .image-2 {
     background-image: url(src/frame_13_delay-0.06s.png);
-    min-height: 700px;
+    min-height: 80%;
 }
 
 .image-3 {
     background-image: url(src/Talk2.png);
-    min-height: 700px;
+    min-height: 80%;
 }
 
 .image-4 {
     background-image: url(src/HCI%20Blinded.png);
-    min-height: 700px;
+    min-height: 80%;
 }
 
 .image-5 {
     background-image: url(src/Happy.png);
-    min-height: 700px;
+    min-height: 80%;
 }
