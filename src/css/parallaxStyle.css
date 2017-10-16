@@ -13,10 +13,10 @@ h2 {
 }
 
 
-.parralax {
+.parallax {
     background-color: dimgrey;
 }
-.parralax-caption{
+.parallax-caption{
   font-family: 'Exo', sans-serif;
     background-color: #111;
     color: #fff;
@@ -24,7 +24,7 @@ h2 {
     font-size: 24px;
     letter-spacing: 2px;
 }
-.parralax-cover{
+.parallax-cover{
   font-family: 'Orbitron', sans-serif;
     color: #000;
     
@@ -36,7 +36,7 @@ h2 {
     top: 50%;
     width: 100%;
 }
-.parralax-cover_bg{
+.parallax-cover_bg{
   color: #fff;
     background-color: #333;
     
@@ -48,7 +48,7 @@ h2 {
     margin-left: 30%;
     margin-right: auto;
 }
-.parralax-button{
+.parallax-button{
   font-family: 'Russo One', sans-serif;
     color: #fff;
     background-color: #333;
