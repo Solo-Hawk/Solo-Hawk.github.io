@@ -13,26 +13,26 @@
 }
 
 .image-1 {
-    background-image: url(src/img/image1.png);
+    background-image: url(../img/image1.png);
     min-height: 90%;
 }
 
 .image-2 {
-    background-image: url(src/img/image2.png);
+    background-image: url(../img/image2.png);
     min-height: 80%;
 }
 
 .image-3 {
-    background-image: url(src/img/image3.png);
+    background-image: url(../img/image3.png);
     min-height: 80%;
 }
 
 .image-4 {
-    background-image: url(src/img/image4.png);
+    background-image: url(../img/image4.png);
     min-height: 80%;
 }
 
 .image-5 {
-    background-image: url(src/img/image5.png);
+    background-image: url(../img/image5.png);
     min-height: 80%;
 }
