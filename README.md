@@ -20,3 +20,8 @@ My github.io URL will now be changed to my personal website to act as my portal 
 
 - [ ] - Revise portfolio presentation method (Following uni guides)
 - [ ] - Restructure work timetable (Not really for the website but to help keep my site consistently updated)
+
+## Acknowledgements
+
+Keith Clark - Pure CSS Parallax Websites - http://keithclark.co.uk/articles/pure-css-parallax-websites/
+
