@@ -1,38 +1,37 @@
+.body {
+  margin: 0px;
+}
+
 .image-1,
 .image-2,
 .image-3,
 .image-4,
 .image-5 {
-    background-color: white;
-    opacity: 0.8;
-    background-position: center;
-    position: relative;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: white;
+  opacity: 1;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image-1 {
-    background-image: url(../img/image1.png);
-    min-height: 90%;
+  background-image: url(../img/image1.png);
 }
 
 .image-2 {
-    background-image: url(../img/image2.png);
-    min-height: 80%;
+  background-image: url(../img/image2.png);
 }
 
 .image-3 {
-    background-image: url(../img/image3.png);
-    min-height: 80%;
+  background-image: url(../img/image3.png);
 }
 
 .image-4 {
-    background-image: url(../img/image4.png);
-    min-height: 80%;
+  background-image: url(../img/image4.png);
 }
 
 .image-5 {
-    background-image: url(../img/image5.png);
-    min-height: 80%;
+  background-image: url(../img/image5.png);
 }
