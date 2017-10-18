@@ -1,10 +1,29 @@
+body,
+html {
+  overflow: hidden;
+}
 body {
   background-color: black;
   margin: 0px;
+  padding: 0px;
 }
-h1{
-  
-  font-size: 42px;
+
+h1,
+h2,
+h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+  font-size: 42;
+}
+
+h2 {
+  font-size: 32;
+}
+
+h3 {
+  font-size: 24;
 }
 
 
@@ -66,7 +85,9 @@ h1{
 /* Parallax caption style
   --------------------------------------------- */
 
-.caption {  
+.caption {
+  font-family: 'Exo', sans-serif;
+  font-size: 30px;
   color: white;
   width: 100%;
   z-index: 10;
@@ -75,8 +96,9 @@ h1{
   text-align: center;
   background-color: black;
 }
-.title{
-  padding: 10px;
+
+.title {
+  padding: 0px;
   width: 40%;
   background-color: gray;
   text-align: center;
@@ -90,26 +112,6 @@ h1{
 
 /* demo styles
   --------------------------------------------- */
-
-body,
-html {
-  overflow: hidden;
-}
-
-body {
-  font: 100% / 1.5 Arial;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.parallax {
-  font-size: 200%;
-}
-
-
 
 
 
@@ -126,7 +128,6 @@ body {
   background-position-x: -200px;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  
   background-image: url(../img/image1.png)
 }
 
@@ -166,7 +167,6 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url(../img/image4.png)
-  
 }
 
 #group5 {
