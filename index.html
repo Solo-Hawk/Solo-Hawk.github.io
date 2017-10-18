@@ -1,65 +1,68 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Exo:400,900|Orbitron:400,900|Russo+One" rel="stylesheet">
-    
-    <link rel="stylesheet" href="src/css/parallaxStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Exo:400,900|Orbitron:400,800|Russo+One" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/parallaxStyle.css">
   <!-- <link rel="stylesheet" href="src/css/frontpageStyle.css"> -->
-  </head>
+</head>
 
 <body>
-  
-    <div class="debug">
-  <label>
-    <input type="checkbox"> Debug</label>
-</div>
-    <div class="parallax">
+  <div class="debug">
+    <label>
+      <input type="checkbox"> Debug</label>
+  </div>
+  <div class="parallax">
     <div id="group1" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
-        <div class="title"><h1 class="rainbow">Daniel Fowke</h1></div>
+        <div class="title">
+          <h1 class="rainbow">Daniel Fowke</h1></div>
       </div>
       <div class="parallax__layer parallax__layer--base">
-        
-        <div class= "caption" >
-        Caption and Stuff
+        <div class="caption"> Caption and Stuff </div>
       </div>
-      </div>
-      
     </div>
-      
     <div id="group2" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Fore Layer</div>
+        <div class="title">
+          <h1 class="rainbow">Portfolio</h1></div>
       </div>
-      <div class="parallax__layer parallax__layer--back">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="caption"> Caption and Stuff </div>
       </div>
+      <div class="parallax__layer parallax__layer--back"> </div>
     </div>
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Foreground Layer</div>
+        <div class="title">
+          <h1 class="rainbow">My Work</h1></div>
       </div>
       <div class="parallax__layer parallax__layer--base">
+        <div class="caption"> Caption and Stuff </div>
       </div>
     </div>
     <div id="group4" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+        <div class="title">
+          <h1 class="rainbow">About my College</h1></div>
+        <div class="caption"> Caption and Stuff </div>
       </div>
-      <div class="parallax__layer parallax__layer--back">
-      </div>
+      <div class="parallax__layer parallax__layer--back"> </div>
     </div>
     <div id="group5" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Foreground Layer</div>
+        <div class="title">
+          <h1 class="rainbow">Contact Me</h1></div>
       </div>
       <div class="parallax__layer parallax__layer--base">
+        <div class="caption"> Caption and Stuff </div>
       </div>
     </div>
   </div>
   <script>
     var debugInput = document.querySelector("input");
+
     function updateDebugState() {
-        document.body.classList.toggle('debug-on', debugInput.checked);
+      document.body.classList.toggle('debug-on', debugInput.checked);
     }
     debugInput.addEventListener("click", updateDebugState);
     updateDebugState();
