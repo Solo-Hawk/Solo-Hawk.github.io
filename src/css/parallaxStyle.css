@@ -71,8 +71,8 @@ h3 {
 }
 
 .parallax__layer--back {
-  margin: -10px -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
+  margin: -10px -webkit-transform: translateZ(-100px) scale(1.4);
+  transform: translateZ(-100px) scale(1.4);
   z-index: 3;
 }
 
@@ -126,8 +126,7 @@ h3 {
 
 #group1 .parallax__layer--base {
   background: rgb(102, 204, 102);
-  background-position-x: -200px;
-  background-attachment: fixed;
+  background-position-x: -300px;
   background-repeat: no-repeat;
   background-image: url(../img/image1.png)
 }
