@@ -94,7 +94,6 @@ h3 {
   z-index: 10;
   position: absolute;
   bottom: 0;
-  text-align: center;
   background-color: black;
 }
 
@@ -127,6 +126,7 @@ h3 {
 #group1 .parallax__layer--base {
   background: rgb(102, 204, 102);
   background-position-x: -300px;
+  background-position-y: -160px;
   background-repeat: no-repeat;
   background-image: url(../img/image1.png)
 }
