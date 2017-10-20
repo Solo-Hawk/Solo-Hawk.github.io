@@ -3,7 +3,6 @@
 .image-3,
 .image-4,
 .image-5 {
-    background-color: white;
     opacity: 0.8;
     background-position: center;
     position: relative;
@@ -14,7 +13,7 @@
 
 .image-1 {
     background-image: url(../img/image1.png);
-    min-height: 90%;
+    min-height: 85%;
 }
 
 .image-2 {
