@@ -1,3 +1,7 @@
+.body {
+  margin: 0px;
+}
+
 .image-1,
 .image-2,
 .image-3,
@@ -17,21 +21,17 @@
 }
 
 .image-2 {
-    background-image: url(../img/image2.png);
-    min-height: 80%;
+  background-image: url(../img/image2.png);
 }
 
 .image-3 {
-    background-image: url(../img/image3.png);
-    min-height: 80%;
+  background-image: url(../img/image3.png);
 }
 
 .image-4 {
-    background-image: url(../img/image4.png);
-    min-height: 80%;
+  background-image: url(../img/image4.png);
 }
 
 .image-5 {
-    background-image: url(../img/image5.png);
-    min-height: 80%;
+  background-image: url(../img/image5.png);
 }

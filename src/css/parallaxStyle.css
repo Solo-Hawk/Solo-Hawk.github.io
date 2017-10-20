@@ -1,3 +1,4 @@
+
 .image{
   
 }
@@ -49,6 +50,7 @@
   margin-left: 32%;
   margin-right: 32%;
   font-size: auto;
+
 }
 
 .parallax-button:hover {
@@ -57,6 +59,9 @@
   text-align: center;
   background-color: #fff;
 }
+
+/* Rainbow Classes - Ranbow Effect
+  --------------------------------------------- */
 
 .rainbow {
   animation: txtColor 20s infinite linear;
@@ -123,7 +128,9 @@
   87.5% {
     background-color: #FF1493;
   }
+
   100% {
     background-color: #FF0000;
   }
 }
+
