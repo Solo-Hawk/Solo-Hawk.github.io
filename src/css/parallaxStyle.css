@@ -1,136 +1,130 @@
-
-.image{
-  
-}
+.image {}
 
 .parallax {
-  background-color:dimgray;
+    background-color: dimgray;
 }
 
 .parallax-caption {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 24px;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 24px;
 }
 
 .parallax-cover {
-  color: #fff;
-  font-size: 30px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
 }
 
 .parallax-cover_bg {
-  color: #fff;
-  background-color: #333;
-  opacity: 0.8;
-  align-content: center;
-  font-size: 25px;
-  letter-spacing: 5px;
-  width: 40%;
-  margin-left: 30%;
-  margin-right: auto;
+    color: #fff;
+    background-color: #333;
+    opacity: 0.8;
+    align-content: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: auto;
 }
 
 .parallax-button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  width: 36%;
-  margin-left: 32%;
-  margin-right: 32%;
-  font-size: auto;
-
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 36%;
+    margin-left: 32%;
+    margin-right: 32%;
+    font-size: auto;
 }
 
 .parallax-button:hover {
-  animation: txtColor 3s infinite linear;
-  color: #000;
-  text-align: center;
-  background-color: #fff;
+    animation: txtColor 3s infinite linear;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
 }
+
 
 /* Rainbow Classes - Ranbow Effect
   --------------------------------------------- */
 
 .rainbow {
-  animation: txtColor 20s infinite linear;
+    animation: txtColor 20s infinite linear;
 }
 
 .ranbow_bg {
-  animation: bgColor 30s infinite linear;
+    animation: bgColor 30s infinite linear;
 }
 
- 
-
 @keyframes txtColor {
-  0% {
-    color: #FF0000;
-  }
-  12.5% {
-    color: #FFA500;
-  }
-  25% {
-    color: #FFFF00;
-  }
-  37.5% {
-    color: #7FFF00;
-  }
-  50% {
-    color: #00FFFF;
-  }
-  62.5% {
-    color: #0000FF;
-  }
-  75% {
-    color: #9932CC;
-  }
-  87.5% {
-    color: #FF1493;
-  }
-  100% {
-    color: #FF0000;
-  }
+    0% {
+        color: #FF0000;
+    }
+    12.5% {
+        color: #FFA500;
+    }
+    25% {
+        color: #FFFF00;
+    }
+    37.5% {
+        color: #7FFF00;
+    }
+    50% {
+        color: #00FFFF;
+    }
+    62.5% {
+        color: #0000FF;
+    }
+    75% {
+        color: #9932CC;
+    }
+    87.5% {
+        color: #FF1493;
+    }
+    100% {
+        color: #FF0000;
+    }
 }
 
 @keyframes bgColor {
-  0% {
-    background-color: #FF0000;
-  }
-  12.5% {
-    background-color: #FFA500;
-  }
-  25% {
-    background-color: #FFFF00;
-  }
-  37.5% {
-    background-color: #7FFF00;
-  }
-  50% {
-    background-color: #00FFFF;
-  }
-  62.5% {
-    background-color: #0000FF;
-  }
-  75% {
-    background-color: #9932CC;
-  }
-  87.5% {
-    background-color: #FF1493;
-  }
-
-  100% {
-    background-color: #FF0000;
-  }
+    0% {
+        background-color: #FF0000;
+    }
+    12.5% {
+        background-color: #FFA500;
+    }
+    25% {
+        background-color: #FFFF00;
+    }
+    37.5% {
+        background-color: #7FFF00;
+    }
+    50% {
+        background-color: #00FFFF;
+    }
+    62.5% {
+        background-color: #0000FF;
+    }
+    75% {
+        background-color: #9932CC;
+    }
+    87.5% {
+        background-color: #FF1493;
+    }
+    100% {
+        background-color: #FF0000;
+    }
 }
-

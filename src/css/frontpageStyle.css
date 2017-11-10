@@ -13,25 +13,30 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .image-1 {
     background-image: url(../img/image1.png);
-    min-height: 85%;
+    min-height: 85%; 
 }
 
 .image-2 {
   background-image: url(../img/image2.png);
+  min-height: 600px;
 }
 
 .image-3 {
   background-image: url(../img/image3.png);
+  min-height: 600px;
 }
 
 .image-4 {
   background-image: url(../img/image4.png);
+  min-height: 600px;
 }
 
 .image-5 {
   background-image: url(../img/image5.png);
+  min-height: 600px;
 }
