@@ -2,13 +2,19 @@ body{
   background-color: dimgray;
 }
 h1{
+  padding-top:50%;
+  font-size: 4vw;
   color: white;
   opacity: 1;
+}
+.caption{
+  min-height: 300px;
+  color: white;
 }
 .item-1{
   background-image: url(../img/pImage1.JPG);
 }
-.item-1{
+.item-2{
   background-image: url(../img/pImage1.JPG);
 }
 
@@ -24,19 +30,19 @@ h1{
     min-height: 300px;
 }
 
-.item-left{
+.item-header-left{
+  text-align: center;
   align-content: center;
   min-height: inherit;
   background-color: black;
   opacity: 0.85;
   float: left;
-  width: 30%
+  width: 30%;
 }
-.item-left-image{
+.item-caption-left{
   background-color: black;
   opacity: 0.5;
   float:left;
-  min-height: inherit;
   width: 70%;
-  
+  max-width: 70%;
 }
