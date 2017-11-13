@@ -1,11 +1,42 @@
+body{
+  background-color: dimgray;
+}
+h1{
+  color: white;
+  opacity: 1;
+}
+.item-1{
+  background-image: url(../img/pImage1.JPG);
+}
+.item-1{
+  background-image: url(../img/pImage1.JPG);
+}
+
 .head {
-    background-image: url(../img/pImage1.JPG);
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
-    min-height: 600px;
+    
 }
 
 .item {
-    
+    text-align: center;
+  background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    min-height: 300px;
+}
+
+.item-left{
+  align-content: center;
+  min-height: inherit;
+  background-color: black;
+  opacity: 0.85;
+  float: left;
+  width: 30%
+}
+.item-left-image{
+  background-color: black;
+  opacity: 0.5;
+  float:left;
+  min-height: inherit;
+  width: 70%;
+  
 }
