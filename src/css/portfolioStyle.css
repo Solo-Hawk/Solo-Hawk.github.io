@@ -1,6 +1,6 @@
 body {
   color: white;
-  background-color: dimgray;
+  background-color: #DBDBDB;
 }
 
 h1 {
@@ -28,18 +28,23 @@ h1 {
 }
 
 .item .item-header-left {
-  animation: shift-headr 1s forwards;
+  animation: shift-headr 0.7s forwards;
 }
-
+.item .item-header-right {
+  animation: shift-headr 0.7s  forwards;
+}
 .item .item-caption-text {
-  animation: shift-textr 1s forwards;
+  animation: shift-textr 0.7s  forwards;
 }
 
 .item:hover .item-header-left {
-  animation: shift-head 1s forwards;
+  animation: shift-head 0.7s  forwards;
+}
+.item:hover .item-header-right {
+  animation: shift-head 0.7s  forwards;
 }
 .item:hover .item-caption-text {
-  animation: shift-text 1s forwards;
+  animation: shift-text 0.7s  forwards;
 }
 
 .item-header-left {
@@ -72,7 +77,7 @@ h1 {
   background-color: black;
   opacity: 0.9;
   margin: auto;
-  width: 0%;
+  width: 80%;
   min-height: inherit;
   text-align: center;
 }
