@@ -1,48 +1,136 @@
-body{
+body {
+  color: white;
   background-color: dimgray;
 }
-h1{
-  padding-top:50%;
+
+h1 {
   font-size: 4vw;
-  color: white;
   opacity: 1;
 }
-.caption{
-  min-height: 300px;
-  color: white;
-}
-.item-1{
-  background-image: url(../img/pImage1.JPG);
-}
-.item-2{
+
+.item-1 {
   background-image: url(../img/pImage1.JPG);
 }
 
-.head {
-    
+.item-2 {
+  background-image: url(../img/pImage1.JPG);
+}
+
+.header {
+  min-height: 100px;
 }
 
 .item {
-    text-align: center;
   background-position: center;
-    background-size: cover;
-    opacity: 0.9;
-    min-height: 300px;
+  background-size: cover;
+  opacity: 0.9;
+  min-height: 300px;
 }
 
-.item-header-left{
-  text-align: center;
-  align-content: center;
-  min-height: inherit;
-  background-color: black;
-  opacity: 0.85;
-  float: left;
-  width: 30%;
+.item .item-header-left {
+  animation: shift-headr 1s forwards;
 }
-.item-caption-left{
+
+.item .item-caption-text {
+  animation: shift-textr 1s forwards;
+}
+
+.item:hover .item-header-left {
+  animation: shift-head 1s forwards;
+}
+.item:hover .item-caption-text {
+  animation: shift-text 1s forwards;
+}
+
+.item-header-left {
+  z-index: 10;
+  position: relative;
+  float: left;
+  display: inline-block;
   background-color: black;
-  opacity: 0.5;
-  float:left;
-  width: 70%;
-  max-width: 70%;
+  opacity: 0.9;
+  margin: auto;
+  width: 80%;
+  min-height: inherit;
+  text-align: center;
+}
+
+.item-caption-left {
+  background-color: black;
+  opacity: 0.6;
+  min-height: inherit;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.item-header-right {
+  z-index: 10;
+  position: relative;
+  float: right;
+  display: inline-block;
+  background-color: black;
+  opacity: 0.9;
+  margin: auto;
+  width: 0%;
+  min-height: inherit;
+  text-align: center;
+}
+
+.item-caption-right {
+  background-color: black;
+  opacity: 0.6;
+  min-height: inherit;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.item-header-text {
+  font-size: 3vw;
+  display: block;
+  margin: auto;
+  padding-top: 3vw;
+  vertical-align: middle;
+}
+
+.item-caption-text {
+  color: black;
+  display: block;
+  margin: auto;
+  padding-top: 5vw;
+}
+
+@keyframes shift-head {
+  0% {
+    width: 80%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes shift-headr {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes shift-text {
+  0% {
+    color: #000000;
+  }
+  100% {
+    color: #FFFFFF;
+  }
+}
+@keyframes shift-textr {
+  0% {
+    color: #FFFFFF;
+  }
+  100% {
+    color: #000000;
+  }
 }
