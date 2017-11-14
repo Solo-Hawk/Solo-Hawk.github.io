@@ -28,3 +28,74 @@ h3{
   font-family: 'Russo One', sans-serif;
   letter-spacing: 10px;
 }
+
+/* Rainbow Classes - Ranbow Effect
+  --------------------------------------------- */
+
+.rainbow {
+    animation: txtColor 20s infinite linear;
+}
+
+.ranbow_bg {
+    animation: bgColor 30s infinite linear;
+}
+
+@keyframes txtColor {
+    0% {
+        color: #FF0000;
+    }
+    12.5% {
+        color: #FFA500;
+    }
+    25% {
+        color: #FFFF00;
+    }
+    37.5% {
+        color: #7FFF00;
+    }
+    50% {
+        color: #00FFFF;
+    }
+    62.5% {
+        color: #0000FF;
+    }
+    75% {
+        color: #9932CC;
+    }
+    87.5% {
+        color: #FF1493;
+    }
+    100% {
+        color: #FF0000;
+    }
+}
+
+@keyframes bgColor {
+    0% {
+        background-color: #FF0000;
+    }
+    12.5% {
+        background-color: #FFA500;
+    }
+    25% {
+        background-color: #FFFF00;
+    }
+    37.5% {
+        background-color: #7FFF00;
+    }
+    50% {
+        background-color: #00FFFF;
+    }
+    62.5% {
+        background-color: #0000FF;
+    }
+    75% {
+        background-color: #9932CC;
+    }
+    87.5% {
+        background-color: #FF1493;
+    }
+    100% {
+        background-color: #FF0000;
+    }
+}
