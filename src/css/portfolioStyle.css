@@ -24,7 +24,7 @@ h1 {
 }
 .header-div{
 /*  margin: 1vw;*/
-  background-color: dimgray;
+  background-color: #111111;
 }
 
 .item {
@@ -62,7 +62,7 @@ h1 {
   float: left;
   display: inline-block;
   background-color: black;
-  opacity: 0.9;
+  opacity: 0.6;
   margin: auto;
   width: 80%;
   min-height: inherit;
