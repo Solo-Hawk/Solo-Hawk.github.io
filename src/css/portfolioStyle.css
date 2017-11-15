@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   color: white;
   background-color: black;
 }
@@ -8,9 +9,34 @@ h1 {
   font-size: 2vw;
   opacity: 1;
 }
+a{
+  text-decoration: none;
+}
 
 .item-1 {
-  background-image: url(../img/pImage1.JPG);
+  animation: bgitem-1r 0.6s forwards;
+}
+
+.item-1:hover{
+  animation: bgitem-1 0.6s forwards;
+}
+
+@keyframes bgitem-1 {
+  0% {
+    background-image: url(../img/pImage1.JPG);
+  }
+  100% {
+    background-image: url(../img/pImage1r.JPG);
+  }
+}
+@keyframes bgitem-1r {
+  0% {
+    
+  background-image: url(../img/pImage1r.JPG);
+  }
+  100% {
+    background-image: url(../img/pImage1.JPG);
+  }
 }
 
 .item-2 {
@@ -28,10 +54,11 @@ h1 {
 }
 
 .item {
+  background-color: black;
   background-position: center;
   background-size: cover;
   opacity: 0.9;
-  min-height: 300px;
+  min-height: 280px;
 }
 /*
 
@@ -39,68 +66,54 @@ h1 {
   animation: shift-headr 0.7s forwards;
 }
 */
-.item .item-header-left, .item-header-right {
+.item .item-header{
   animation: shift-headr 0.7s  forwards;
 }
 .item .item-caption-text {
   animation: shift-textr 0.7s  forwards;
 }
 
-.item:hover .item-header-left{
-  animation: shift-head 0.7s  forwards;
-}
-.item:hover .item-header-right{
+
+.item:hover .item-header{
   animation: shift-head 0.7s  forwards;
 }
 .item:hover .item-caption-text {
   animation: shift-text 0.7s  forwards;
 }
 
-.item-header-left {
+
+
+.item-caption {
+  background-color: black;
+  opacity: 0.6;
+  min-height: inherit;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.item-header{
   z-index: 10;
   position: relative;
+  display: inline-block;
+  background-color: black;
+  opacity: 0.6;
+  margin: auto;
+  width: 80%;
+  min-height: inherit;
+  text-align: center;
+}
+.item-hl {
+  
   float: left;
-  display: inline-block;
-  background-color: black;
-  opacity: 0.6;
-  margin: auto;
-  width: 80%;
-  min-height: inherit;
-  text-align: center;
+  
 }
-
-.item-caption-left {
-  background-color: black;
-  opacity: 0.6;
-  min-height: inherit;
-  text-align: center;
-  margin: auto;
-  width: 100%;
-}
-
-.item-header-right {
-  z-index: 10;
-  position: relative;
+.item-hr {;
   float: right;
-  display: inline-block;
-  background-color: black;
-  opacity: 0.6;
-  margin: auto;
-  width: 80%;
-  min-height: inherit;
-  text-align: center;
-}
-
-.item-caption-right {
-  background-color: black;
-  opacity: 0.6;
-  min-height: inherit;
-  text-align: center;
-  margin: auto;
-  width: 100%;
+  
 }
 
 .item-header-text {
+  color: white;
   display: block;
   margin: auto;
   padding-top: 3vw;
