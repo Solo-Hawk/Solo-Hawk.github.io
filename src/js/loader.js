@@ -10,7 +10,7 @@ function showPage() {
     document.getElementById("main").style.animation = "fade 1s forwards";
 //    document.getElementById("main").style.opacity = "1";
   
-  }, 100)
+  }, 600)
   
   
 }

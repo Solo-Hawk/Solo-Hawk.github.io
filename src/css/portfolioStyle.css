@@ -23,19 +23,19 @@ a{
 
 @keyframes bgitem-1 {
   0% {
-    background-image: url(../img/pImage1.jpg);
+    background-image: url(../img/portfolio/pImage1.jpg);
   }
   100% {
-    background-image: url(../img/pImage1r.jpg);
+    background-image: url(../img/portfolio/pImage1r.jpg);
   }
 }
 @keyframes bgitem-1r {
   0% {
     
-  background-image: url(../img/pImage1r.jpg);
+  background-image: url(../img/portfolio/pImage1r.jpg);
   }
   100% {
-    background-image: url(../img/pImage1.jpg);
+    background-image: url(../img/portfolio/pImage1.jpg);
   }
 }
 
