@@ -1,15 +1,44 @@
 <html>
+
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Exo:400,900|Orbitron:400,900|Russo+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Exo:400,900|Orbitron:400,900|Russo+One" rel="stylesheet">
   <link rel="stylesheet" href="../src/css/pageStyle.css">
   <link rel="stylesheet" href="../src/css/portfolioStyle.css">
   <link rel="stylesheet" href="../src/css/parallaxStyle.css"> </head>
-    <body>
-        <div class="head">
-        
-        </div>
-    <div class="item">
-        This is an item
-        </div>
-    </body>
+
+<body onload="loadPage()">
+  <div id="loader">
+  
+  </div>
+  <div id="main" style="display:none; opacity: 0;">
+    <div>
+      <div class="header-div">
+        <h1 class="header-h1 rainbow">PORTFOLIO</h1></div>
+    </div>
+    <!--  Item-->
+    <!--      -->
+    <a href="test.com">
+      <div class="item item-1">
+        <div class="item-header item-hl"> <span class="item-header-text"><h1>Game Development BTEC</h1></span> </div>
+        <div class="item-caption"> <span class="item-caption-text"><p class="caption">A 8 weeks crash course into making a game from the reasearch all the way into the development process and making a final product to present to an audience, this is what started my interest into Games Development.
+          
+          See More</p></span > </div>
+  </div>
+  </a>
+  <!--  Item-->
+  <!--      -->
+  <div class="item">
+    <div class="item-header item-hl"> <span class="item-header-text"><h1>Human Computer Interactions</h1></span> </div>
+        <div class="item-caption"> <span class="item-caption-text"><p class="caption">This stuff is about HCI and stuff so enjoy</p></span> </div>
+      </div>
+      <!--  Item-->
+      <!--      -->
+      <div class="item">
+        <div class="item-header item-hl"> <span class="item-header-text"><h1>Coming Soon</h1></span> </div>
+        <div class="item-caption"> <span class="item-caption-text"><p class="caption">I have a lot more work to show so be prepared</p></span> </div>
+      </div>
+  </div>
+  <script src="../src/js/loader.js"></script>
+</body>
+
 </html>

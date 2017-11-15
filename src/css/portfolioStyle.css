@@ -1,11 +1,162 @@
-.head {
+body {
+  margin: 0;
+  color: white;
+  background-color: black;
+}
+
+h1 {
+  
+  font-size: 2vw;
+  opacity: 1;
+}
+a{
+  text-decoration: none;
+}
+
+.item-1 {
+  animation: bgitem-1r 0.6s forwards;
+}
+
+.item-1:hover{
+  animation: bgitem-1 0.6s forwards;
+}
+
+@keyframes bgitem-1 {
+  0% {
     background-image: url(../img/pImage1.JPG);
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
-    min-height: 600px;
+  }
+  100% {
+    background-image: url(../img/pImage1r.JPG);
+  }
+}
+@keyframes bgitem-1r {
+  0% {
+    
+  background-image: url(../img/pImage1r.JPG);
+  }
+  100% {
+    background-image: url(../img/pImage1.JPG);
+  }
+}
+
+.item-2 {
+  background-image: url(../img/pImage1.JPG);
+}
+
+.header-h1 {
+/*  min-height: 100px;*/
+  font-size: 4vw;
+  font-weight: 1000;
+}
+.header-div{
+/*  margin: 1vw;*/
+  background-color: #111111;
 }
 
 .item {
-    
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  min-height: 280px;
+}
+/*
+
+.item .item-header-left {
+  animation: shift-headr 0.7s forwards;
+}
+*/
+.item .item-header{
+  animation: shift-headr 0.7s  forwards;
+}
+.item .item-caption-text {
+  animation: shift-textr 0.7s  forwards;
+}
+
+
+.item:hover .item-header{
+  animation: shift-head 0.7s  forwards;
+}
+.item:hover .item-caption-text {
+  animation: shift-text 0.7s  forwards;
+}
+
+
+
+.item-caption {
+  background-color: black;
+  opacity: 0.6;
+  min-height: inherit;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.item-header{
+  z-index: 10;
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  opacity: 0.6;
+  margin: auto;
+  width: 80%;
+  min-height: inherit;
+  text-align: center;
+}
+.item-hl {
+  
+  float: left;
+  
+}
+.item-hr {;
+  float: right;
+  
+}
+
+.item-header-text {
+  color: white;
+  display: block;
+  margin: auto;
+  padding-top: 3vw;
+  vertical-align: middle;
+}
+
+.item-caption-text {
+  color: black;
+  display: block;
+  margin: auto;
+  padding-top: 5vw;
+}
+
+@keyframes shift-head {
+  0% {
+    width: 80%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes shift-headr {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes shift-text {
+  0% {
+    color: #000000;
+  }
+  100% {
+    color: #FFFFFF;
+  }
+}
+@keyframes shift-textr {
+  0% {
+    color: #FFFFFF;
+  }
+  100% {
+    color: #000000;
+  }
 }
