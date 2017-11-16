@@ -1,3 +1,6 @@
+/*---------------------------------*/
+            /*MAIN STYLE*/
+/*---------------------------------*/
 body {
   margin: 0;
   color: white;
@@ -11,34 +14,8 @@ h1 {
 }
 a{
   text-decoration: none;
-}
 
-.item-1 {
-  animation: bgitem-1r 0.6s forwards;
 }
-
-.item-1:hover{
-  animation: bgitem-1 0.6s forwards;
-}
-
-@keyframes bgitem-1 {
-  0% {
-    background-image: url(../img/portfolio/pImage1.jpg);
-  }
-  100% {
-    background-image: url(../img/portfolio/pImage1r.jpg);
-  }
-}
-@keyframes bgitem-1r {
-  0% {
-    
-  background-image: url(../img/portfolio/pImage1r.jpg);
-  }
-  100% {
-    background-image: url(../img/portfolio/pImage1.jpg);
-  }
-}
-
 .header-h1 {
 /*  min-height: 100px;*/
   font-size: 4vw;
@@ -156,3 +133,39 @@ a{
     color: #000000;
   }
 }
+/*---------------------------------*/
+/*---------------------------------*/
+/*---------------------------------*/
+
+/*---------------------------------
+                ITEMS
+                -----
+               ITEM - 1
+  ---------------------------------*/
+
+.item-1 {
+  animation: bgitem-1r 0.6s forwards;
+}
+
+.item-1:hover{
+  animation: bgitem-1 0.6s forwards;
+}
+
+@keyframes bgitem-1 {
+  0% {
+    background-image: url(../img/portfolio/pImage1.jpg);
+  }
+  100% {
+    background-image: url(../img/portfolio/pImage1r.jpg);
+  }
+}
+@keyframes bgitem-1r {
+  0% {
+    
+  background-image: url(../img/portfolio/pImage1r.jpg);
+  }
+  100% {
+    background-image: url(../img/portfolio/pImage1.jpg);
+  }
+}
+
