@@ -7,6 +7,7 @@
 .image-3,
 .image-4,
 .image-5 {
+  min-height: 600px;
     opacity: 0.8;
     background-position: center;
     position: relative;
@@ -18,25 +19,20 @@
 
 .image-1 {
     background-image: url(../img/frontpage/image1.png);
-    min-height: 85%; 
 }
 
 .image-2 {
   background-image: url(../img/frontpage/image2.png);
-  min-height: 600px;
 }
 
 .image-3 {
   background-image: url(../img/frontpage/image3.png);
-  min-height: 600px;
 }
 
 .image-4 {
   background-image: url(../img/frontpage/image4.png);
-  min-height: 600px;
 }
 
 .image-5 {
   background-image: url(../img/frontpage/image5.png);
-  min-height: 600px;
 }
