@@ -7,7 +7,7 @@
 .image-3,
 .image-4,
 .image-5 {
-  min-height: 75%;
+  min-height: 600px;
     opacity: 0.8;
     background-position: center;
     position: relative;
