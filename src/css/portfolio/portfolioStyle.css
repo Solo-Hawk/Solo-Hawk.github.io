@@ -32,43 +32,48 @@ a{
   margin: 0px;
 }
 .item-head{
-  transition: all 0.15s linear;
+  transition: all 0.22s linear;
   position: relative;
   color: white;
   display: inline-block;
   z-index: 10;
   min-height: inherit;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
   padding-top: 13vh;
   float: left;
   width: 75%
 }
 .item-caption{
+  transition: all 0.22s linear;
 /*  width: 100%;*/
   min-height: inherit;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.5;
   padding-top: 13vh;
   margin: auto;
   width: auto;
 }
 .item-caption-text{
   font-size: 0.8vw;
-  transition: all 0.15s linear;
+  transition: all 0.3s linear;
   color: black;
   padding-right: 10px;
   padding-left: 10px;
 }
 .item-title{
-  transition: all 0.15s linear;
+  transition: all 0.3s linear;
 }
 .item:hover .item-head{
   width: 30%;
+  opacity: 0.6;
   
 }
 .item:hover .item-title{
   font-size: 1.5vw;
+}
+.item:hover .item-caption{
+  opacity: 0.8
 }
 .item:hover .item-caption-text{
   font-size: 1.5vw;
@@ -85,11 +90,12 @@ a{
 /*ITEM BACKGROUNDS*/
 
 .item-1{
-  background-image: url(../img/portfolio/item1.jpg)
+  background-image: url(../../img/portfolio/item1.jpg)
 }
 .item-1:hover{
- background-image: url(../img/portfolio/item1r.jpg)
+ background-image: url(../../img/portfolio/item1r.jpg)
 }
+
 
 .item-2{
   background-color: darkblue;
