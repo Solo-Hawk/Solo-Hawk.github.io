@@ -1,0 +1,22 @@
+.parent {
+  display: flex;
+}
+
+.parent div {
+  flex: 1;
+  height: 100%
+}
+
+.parent {}
+
+.parent div {
+  text-align: center;
+  color: white;
+}
+.caption{
+  align-content: center;
+  margin: auto;
+}
+.item{
+  background-image: url(../../img/portfolio/gamedev/research.png)
+}
