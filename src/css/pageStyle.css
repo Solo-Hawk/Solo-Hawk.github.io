@@ -1,88 +1,133 @@
 body {
     margin: 0px;
-  background-color: black;
+    background-color: black;
 }
-h1,h2,h3{font-family: 'Orbitron', sans-serif;}
+
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
 
 h1,
 h2 {
     text-align-last: center;
-    
 }
 
-h1{
-  font-size: 42px;
+h1 {
+    font-size: 42px;
 }
+
 h2 {
     font-size: 30px;
-} 
-h3{
-  font-size: 24px;
 }
 
+h3 {
+    font-size: 24px;
+}
 
-.caption{/* Default caption style */
-  font-family: 'Exo', sans-serif;
-  letter-spacing: 1.5px;
+.caption {
+    /* Default caption style */
+    font-family: 'Exo', sans-serif;
+    letter-spacing: 1.5px;
 }
-.highlight{/* Default highlight style */
-  font-family: 'Russo One', sans-serif;
-  letter-spacing: 10px;
+
+.highlight {
+    /* Default highlight style */
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 10px;
 }
+
+.hightlight:hover not-ready span {
+    display: none
+}
+
+.hightlight:hover not-ready:after {
+    content: 'IN-CONSTRUCTION';
+}
+
 
 /* Loader CSS and Animations
   --------------------------------------------- */
 
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+
 /* Add animation to "page content" */
+
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
-@keyframes fade{
-  0% {opacity: 0}
-  100%{opacity: 1}
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
 }
+
+
 /* Rainbow Classes - Ranbow Effect
   --------------------------------------------- */
 

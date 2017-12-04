@@ -1,5 +1,5 @@
 .body {
-  margin: 0px;
+    margin: 0px;
 }
 
 .image-1,
@@ -7,14 +7,13 @@
 .image-3,
 .image-4,
 .image-5 {
-  min-height: 600px;
+    min-height: 600px;
     opacity: 0.8;
     background-position: center;
     position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 .image-1 {
@@ -23,17 +22,17 @@
 }
 
 .image-2 {
-  background-image: url(../../img/frontpage/image2.png);
+    background-image: url(../../img/frontpage/image2.png);
 }
 
 .image-3 {
-  background-image: url(../../img/frontpage/image3.png);
+    background-image: url(../../img/frontpage/image3.png);
 }
 
 .image-4 {
-  background-image: url(../../img/frontpage/image4.png);
+    background-image: url(../../img/frontpage/image4.png);
 }
 
 .image-5 {
-  background-image: url(../../img/frontpage/image5.png);
+    background-image: url(../../img/frontpage/image5.png);
 }
