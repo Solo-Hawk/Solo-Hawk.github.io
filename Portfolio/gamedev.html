@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="../src/css/pageStyle.css">
     <link rel="stylesheet" href="../src/css/portfolio/portfolioDisplay.css"> </head>
 
-<body>
-    <div class="parent caption">
+<body onload="loadPage()">
+    <div id="loader"></div>
+    <div id = "main" class="parent caption" style=" opacity: 0">
         <div class="option"> <a class="caption"><h1>Games Technology Investigation</h1></a>
             <div class="item">
                 <p class="desc">Before diving into this topic, I had to know what is out there, where the industry is heading:
@@ -33,6 +34,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="../src/js/pLoader.js"></script>
 </body>
 
 </html>
