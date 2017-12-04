@@ -112,3 +112,10 @@ a {
 .item-3:hover {
     background-image: url(../../img/portfolio/solwars/item1.png)
 }
+.item-4 {
+    background-image: url(../../img/portfolio/starcitizen/item.png)
+}
+
+.item-4:hover {
+    background-image: url(../../img/portfolio/starcitizen/itemr.png)
+}
