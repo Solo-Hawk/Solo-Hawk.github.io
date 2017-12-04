@@ -7,16 +7,29 @@
   height: 100%
 }
 
-.parent {}
+.parent {height: 100%}
 
 .parent div {
   text-align: center;
   color: white;
 }
 .caption{
+    font-size: 1vw;
   align-content: center;
   margin: auto;
 }
+.caption:hover{
+    content: '';
+}
 .item{
   background-image: url(../../img/portfolio/gamedev/research.png)
+}
+.option{
+    flex:1;
+}
+.desc{
+    margin:40px
+}
+.docs{
+    min-height: 50%;
 }
