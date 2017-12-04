@@ -1,22 +1,53 @@
 .parent {
-  display: flex;
+    display: flex;
 }
 
 .parent div {
-  flex: 1;
-  height: 100%
+    flex: 1;
+    height: 100%
 }
 
-.parent {}
+.parent {
+    height: 100%
+}
 
 .parent div {
-  text-align: center;
-  color: white;
+    text-align: center;
+    color: white;
 }
-.caption{
-  align-content: center;
-  margin: auto;
+
+.caption {
+    align-content: center;
+    margin: auto;
 }
-.item{
-  background-image: url(../../img/portfolio/gamedev/research.png)
+
+.option {
+    flex: 1;
+}
+
+.desc {
+    transition: all 0.3s linear;
+    margin: 40px
+}
+
+.docs {
+    transition: all 0.3s linear;
+    min-height: 50%;
+    opacity: 0.5;
+}
+
+.item:hover .desc {
+    margin: 0px;
+    opacity: 1;
+    color: black;
+    font-size: 0vw;
+}
+
+.item:hover .docs {
+    opacity: 1;
+}
+
+.spacer {
+    width: 0.2%;
+    background-color: darkgray
 }

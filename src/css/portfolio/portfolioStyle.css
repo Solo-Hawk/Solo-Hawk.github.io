@@ -1,103 +1,114 @@
-*{
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-body{
-  text-align: center;
-  background-color: black;
-  color: white;
-  margin: 0;
-}
-a{
-  text-decoration: none;
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
-.header-text{
-  font-size: 5vw;
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
 }
 
-.header{
-  background-color: #111111;
-  padding: 10px;
-  
+a {
+    text-decoration: none;
 }
-.item{
-  transition: all .15s linear;
-/*  background-color: royalblue;*/
-  background-position: center;
-  background-size: cover;
-  min-height: 200px;
-  padding: 0px;
-  margin: 0px;
-}
-.item-head{
-  transition: all 0.22s linear;
-  position: relative;
-  color: white;
-  display: inline-block;
-  z-index: 10;
-  min-height: inherit;
-  background-color: black;
-  opacity: 0.9;
-  padding-top: 13vh;
-  float: left;
-  width: 75%
-}
-.item-caption{
-  transition: all 0.22s linear;
-/*  width: 100%;*/
-  min-height: inherit;
-  background-color: black;
-  opacity: 0.5;
-  padding-top: 13vh;
-  margin: auto;
-  width: auto;
-}
-.item-caption-text{
-  font-size: 0.8vw;
-  transition: all 0.3s linear;
-  color: black;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.item-title{
-  transition: all 0.3s linear;
-}
-.item:hover .item-head{
-  width: 30%;
-  opacity: 0.6;
-  
-}
-.item:hover .item-title{
-  font-size: 1.5vw;
-}
-.item:hover .item-caption{
-  opacity: 0.8
-}
-.item:hover .item-caption-text{
-  font-size: 1.5vw;
-  color: white;
-  content: "Test";
-}
-  
 
+.header-text {
+    font-size: 5vw;
+}
 
+.header {
+    background-color: #111111;
+    padding: 10px;
+}
 
+.item {
+    transition: all .15s linear;
+    /*  background-color: royalblue;*/
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    padding: 0px;
+    margin: 0px;
+}
 
+.item-head {
+    transition: all 0.22s linear;
+    position: relative;
+    color: white;
+    display: inline-block;
+    z-index: 10;
+    min-height: inherit;
+    background-color: black;
+    opacity: 0.7;
+    padding-top: 13vh;
+    float: left;
+    width: 75%
+}
+
+.item-caption {
+    transition: all 0.22s linear;
+    /*  width: 100%;*/
+    min-height: inherit;
+    background-color: black;
+    opacity: 0.4;
+    padding-top: 13vh;
+    margin: auto;
+    width: auto;
+}
+
+.item-caption-text {
+    font-size: 0vw;
+    transition: all 0.25s linear;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.item-title {
+    transition: all 0.25s linear;
+}
+
+.item:hover .item-head {
+    width: 30%;
+    opacity: 0.6;
+}
+
+.item:hover .item-title {
+    font-size: 1.5vw;
+}
+
+.item:hover .item-caption {
+    opacity: 0.4;
+}
+
+.item:hover .item-caption-text {
+    font-size: 1.5vw;
+    color: white;
+    content: "Test";
+}
 
 
 /*ITEM BACKGROUNDS*/
 
-.item-1{
-  background-image: url(../../img/portfolio/item1.jpg)
-}
-.item-1:hover{
- background-image: url(../../img/portfolio/item1r.jpg)
+.item-1 {
+    background-image: url(../../img/portfolio/item1.jpg)
 }
 
-
-.item-2{
-  background-color: darkblue;
+.item-1:hover {
+    background-image: url(../../img/portfolio/item1r.jpg)
 }
 
+.item-2 {
+    background-color: darkblue;
+}
+
+.item-3 {
+    background-image: url(../../img/portfolio/solwars/item1r.png)
+}
+
+.item-3:hover {
+    background-image: url(../../img/portfolio/solwars/item1.png)
+}
