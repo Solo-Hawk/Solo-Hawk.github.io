@@ -1,0 +1,289 @@
+/*Colour Pallete*/
+
+
+/*cover color*/
+
+.theme1 {
+    color: white;
+    background-color: #2E323C;
+}
+
+
+/*Section Colours*/
+
+.theme2 {
+    color: black;
+    background-color: 	#edeff8
+}
+
+.theme3 {
+    color: white;
+    background-color: #303641;
+}
+
+.theme4 {
+    color: white;
+    background-color: #45415E;
+}
+
+.theme5 {
+    color: white;
+    background-color: #45415E;
+}
+
+
+/*-----------*/
+
+
+/*Typography*/
+
+.title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 2rem
+}
+
+.sub {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5rem;
+}
+
+.body {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2rem;
+}
+
+.small-text {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link-text {
+    color: #5a6272
+}
+
+.link-text:hover {
+    color: #a9aebc;
+    text-decoration: none;
+}
+
+
+/*-----------*/
+
+
+/*Navbar transition styles*/
+
+.navbar {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    --transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar a {
+    padding: 0px 20%;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.navbar.scrolled {
+    background: rgb(255, 255, 255);
+    /* IE */
+    background: rgba(255, 255, 255);
+    /* NON-IE */
+}
+
+.navbar.scrolled a {
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+/*-----------*/
+
+
+/*Top of Page Cover Styles*/
+
+.cover-bg {
+    min-height: 100vh
+}
+
+.cover-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.cover-bottom {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/*-----------*/
+
+
+/*Page section cover styles*/
+
+
+/*-----------*/
+
+
+/*Setting Custom Components*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spaced {
+    padding-top: 75px;
+    padding-bottom: 75px
+}
+/*When only one side of padding is needed*/
+.spacer {
+    padding-top: 75px
+}
+
+.avatar {
+    border-radius: 50%;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-center-v{
+  
+    vertical-align: middle;
+}
+/*Force element to fixed minimum height*/
+.sized-height{
+  min-height: 60px
+}
+
+/*For mobile devics*/
+
+@media (max-width: 767px) {
+    .avatar {
+        padding: 50px;
+        width: 220px;
+        height: 220px;
+    }
+    .title {
+        font-size: 1.8rem
+    }
+    .sub {
+        font-size: 1rem;
+    }
+    .body {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*Animated Scroll Call*/
+
+.home-down {
+    padding-top: 60px;
+}
+
+
+/*base span properties*/
+
+.home-down span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+
+/*circle element*/
+
+.home-down span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+
+/*arrow elelment*/
+
+.home-down span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb 3s infinite;
+    animation: sdb 3s infinite;
+    box-sizing: border-box;
+}
+
+
+/*animation keyframes*/
+
+@-webkit-keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* TESTING CSS HERE */
