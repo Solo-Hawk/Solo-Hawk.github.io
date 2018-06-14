@@ -13,7 +13,7 @@
 
 .theme2 {
     color: black;
-    background-color: 	#edeff8
+    background-color: #EDEFF8;
 }
 
 .theme3 {
@@ -28,7 +28,7 @@
 
 .theme5 {
     color: white;
-    background-color: #45415E;
+    background-color: #2E323C;
 }
 
 
@@ -75,22 +75,23 @@
 /*Navbar transition styles*/
 
 .navbar {
+    padding: 1% 20%;
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    --transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    --transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .navbar a {
-    padding: 0px 20%;
     font-size: 1.4rem;
     color: white;
 }
 
 .navbar.scrolled {
+    padding: 0% 20%;
     background: rgb(255, 255, 255);
     /* IE */
     background: rgba(255, 255, 255);
@@ -98,7 +99,6 @@
 }
 
 .navbar.scrolled a {
-    font-size: 1.2rem;
     color: black;
 }
 
@@ -144,11 +144,34 @@
     margin-right: auto;
 }
 
+.icon {
+  width: 100px;
+    float: inherit;
+    padding: 2px
+}
+
+.icon-link {
+    color: white;
+}
+
+.mail-link {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.mail-link:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
 .spaced {
     padding-top: 75px;
     padding-bottom: 75px
 }
+
+
 /*When only one side of padding is needed*/
+
 .spacer {
     padding-top: 75px
 }
@@ -163,14 +186,18 @@
 .text-center {
     text-align: center;
 }
-.text-center-v{
-  
+
+.text-center-v {
     vertical-align: middle;
 }
+
+
 /*Force element to fixed minimum height*/
-.sized-height{
-  min-height: 60px
+
+.sized-height {
+    min-height: 60px
 }
+
 
 /*For mobile devics*/
 
