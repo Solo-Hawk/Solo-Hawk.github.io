@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Exo+2:500,300,200|Share+Tech+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 
 </head>
 
@@ -17,40 +17,15 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand title" href="#">Daniel Fowke</a>
         <div class="collapse navbar-collapse">
-            <div class="navbar-nav" style="float: inherit">
-                <a class="nav-item nav-link" href="../">Home</a>
-                <a class="nav-item nav-link" href="../portfolio/">Portfolio</a>
-                <a class="nav-item nav-link" href="../tutoring/">Tutoring</a>
-                <a class="nav-item nav-link active" href="#">Contact</a>
+            <div class="navbar-nav" style="float">
+                <a class="nav-item nav-link active" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link" href="#">Tutoring</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
             </div>
         </div>
     </nav>
-    <div class="cover-center">
-        <h3 class="sub" style="color: rgb(33, 37, 41); font-size: 13vw">IN_DEVELOPMENT</h3>
-    </div>
-    <div class="cover-bg" style="color: white">
-        <div class="cover-center">
-            <h1 class="title cover">Contact me</h1>
-            <h3 class="sub">I can be contacted various platforms, I'm happy to talk about anything.</h3>
-        </div>
-
-        <div class="cover-bottom">
-            <a href="#aboutme" class="sub home-down"><span></span></a>
-        </div>
-    </div>
-
-    <div id="aboutme" class="container-fluid spaced theme4">
-        <div class="container">
-
-            <h1 class="title">Title</h1>
-            <p class="body">
-                Loren Ipsum</p>
-            <p class="body">
-                Loren Ipsum</p>
-            <p class="sub">Sub Title</p>
-        </div>
-
-    </div>
+    
     
 
     <!-- BootStrap and JQuery -->
